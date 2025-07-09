@@ -15,10 +15,12 @@ jobs:
       issues: write
       
     steps:
-      - name: 🔍 Get Labels Config
+      - name: 🏷️ Create Labels Config
         run: |
-          # Download labels.yml from the wf repository
-          curl -sSL https://raw.githubusercontent.com/ForYouPage-Org/wf/main/labels.yml -o labels.yml
+          cat > labels.yml << 'LABELS'
+          - name: "bug"
+            description: "Something isn't working"
+            color: "d73a4a"
           
           - name: "documentation"
             description: "Improvements or additions to documentation"
@@ -75,7 +77,10 @@ jobs:
           - name: "literature review"
             description: "Requires literature review or research"
             color: "67ff32"
-          LABELS_EOF
+          LABELS
+          
+          echo "📋 Labels configuration created:"
+          cat labels.yml
           
       - name: 🏷️ Sync Labels
         uses: micnncim/action-label-syncer@v1
