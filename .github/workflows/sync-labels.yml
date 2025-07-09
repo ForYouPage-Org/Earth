@@ -15,10 +15,10 @@ jobs:
       issues: write
       
     steps:
-      - name: 🔄 Checkout Central Config
-        uses: actions/checkout@v4
-        with:
-          repository: ForYouPage-Org/.github
+      - name: 🔍 Get Labels Config
+        run: |
+          # Download labels.yml from the central repo
+          curl -sSL https://raw.githubusercontent.com/ForYouPage-Org/.github/main/labels.yml -o labels.yml
           
       - name: 🏷️ Sync Labels
         uses: micnncim/action-label-syncer@v1
@@ -31,8 +31,6 @@ jobs:
         run: |
           if [ "${{ job.status }}" == "success" ]; then
             echo "✅ Labels synced successfully!"
-            echo "🏷️ All labels are now in sync with central configuration"
           else
-            echo "❌ Label sync failed!"
-            echo "Please check the logs for more information"
+            echo "❌ Label sync failed - check logs"
           fi
