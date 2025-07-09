@@ -17,8 +17,8 @@ jobs:
     steps:
       - name: 🔍 Get Labels Config
         run: |
-          # Download labels.yml from the central repo
-          curl -sSL https://raw.githubusercontent.com/ForYouPage-Org/.github/main/labels.yml -o labels.yml
+          # Download labels.yml from the wf repository
+          curl -sSL https://raw.githubusercontent.com/ForYouPage-Org/wf/main/labels.yml -o labels.yml
           
       - name: 🏷️ Sync Labels
         uses: micnncim/action-label-syncer@v1
