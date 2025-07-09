@@ -10,10 +10,7 @@ on:
 jobs:
   sync-labels:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      issues: write
-      
+    
     steps:
       - name: 🏷️ Create Labels Config
         run: |
@@ -79,11 +76,13 @@ jobs:
             color: "67ff32"
           LABELS
           
-          echo "📋 Labels configuration created:"
+          echo "📋 Labels configuration:"
           cat labels.yml
           
       - name: 🏷️ Sync Labels
         uses: micnncim/action-label-syncer@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           manifest: labels.yml
           prune: true
@@ -91,6 +90,11 @@ jobs:
       - name: 📊 Report Status
         if: always()
         run: |
+          echo "🔍 Checking labels after sync..."
+          curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/labels" | \
+            jq -r '.[] | .name' | sort
+          
           if [ "${{ job.status }}" == "success" ]; then
             echo "✅ Labels synced successfully!"
           else
