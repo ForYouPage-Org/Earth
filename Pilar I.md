@@ -20,7 +20,6 @@ Our model redefines media's purpose. We provide the core infrastructure that ena
 - Content Aligned with Human Needs: Our strategy is a direct counter-narrative to high-anxiety, engagement-driven media. We prioritize content with proven psychological and neurological benefits, such as calming audio-scapes and role-modeling from community leaders.
 
 - Action-Oriented by Design: Success is measured by actions taken, not views. The platform integrates features like social media challenges designed to increase physical activity, community volunteerism, and commitment to personal wellbeing goals.
-- 
 
 ## III. Risk Mitigation Framework
 
