@@ -3,13 +3,13 @@
 **To:** The FYP Event Committee & FYP Leadership Team  
 **From:** Marx Wang  
 **Date:** July 16, 2025  
-**Subject:** Proposal: Project Earth – A Global Youth Health & Wellbeing Alliance
+**Subject:** PROJECT EARTH MEDIA PILLAR
 
 ---
 
 ## I. EXECUTIVE SUMMARY
 
-The collapse of traditional media gatekeepers and rise of AI-driven creator economy, projected to reach $528 billion by 2030, presents both an existential threat and historic opportunity to deploy media as public health infrastructure for individual pursuit of well-being and collective pursuit of happiness globally.  This ancillary briefing proposes an aligned media infrastructure that transforms passive consumption into active community health engagement, delivering measurable returns on national health investments while strengthening democratic resilience.
+The collapse of traditional media gatekeepers and rise of AI-driven creator economy, projected to reach $528 billion by 2030, presents both an existential threat and historic opportunity to for individual pursuit of well-being and collective pursuit of happiness globally. This ancillary briefing proposes an aligned media as public health infrastructure that transforms passive consumption into active community health engagement, delivering measurable returns on national health investments while strengthening democratic resilience.
 
 ### II. Value Proposition: A Public Utility for Connection & Action
 
