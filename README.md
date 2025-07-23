@@ -1,4 +1,4 @@
-# MEMORANDUM
+# EARTH MEMORANDUM
 
 **To:** The FYP Event Committee & FYP Leadership Team  
 **From:** Marx Wang  
